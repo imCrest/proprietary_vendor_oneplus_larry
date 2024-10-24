@@ -10574,3 +10574,10 @@ sh_binary {
     filename: "init.oplus.fingerprints.sh",
     device_specific: true,
 }
+
+install_symlink {
+    name: "odm_etc_acdbdata_adsp_avs_config_acdb",
+    device_specific: true,
+    installed_location: "etc/acdbdata/adsp_avs_config.acdb",
+    symlink_target: "/vendor/etc/acdbdata/adsp_avs_config.acdb",
+}
